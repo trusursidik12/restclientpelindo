@@ -101,4 +101,6 @@ class Getdata_m extends CI_model
 			$responseBodyAsString = $response->getBody()->getContents();
 		}
 	}
+
+	//fix
 }
