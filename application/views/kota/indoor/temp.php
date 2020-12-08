@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BALIKPAPAN</title>
+  <title>PELINDO II</title>
   <link rel="icon" href="<?=base_url()?>assets/dist/img/pelindo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
