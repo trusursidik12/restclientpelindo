@@ -55,37 +55,37 @@
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Tekanan</p>
-                  <h1><?= $data01['pressure'] == null || $data01['pressure'] == '' ? '&nbsp' : $data01['pressure'] ?></h1>
+                  <h1><?= $data01['pressure'] == null || $data01['pressure'] == '' ? '&nbsp' : $data01['pressure'] ?></h1> MBar
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Temperatur</p>
-                  <h1><?= $data01['temperature'] == null || $data01['temperature'] == '' ? '&nbsp' : $data01['temperature'] ?>&deg;</h1>
+                  <h1><?= $data01['temperature'] == null || $data01['temperature'] == '' ? '&nbsp' : $data01['temperature'] ?>&deg;</h1> (celcius)
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Kec. Angin</p>
-                  <h1><?= $data01['ws'] == null || $data01['ws'] == '' ? '&nbsp' : $data01['ws'] ?></h1>
+                  <h1><?= $data01['ws'] == null || $data01['ws'] == '' ? '&nbsp' : $data01['ws'] ?></h1> Km/jam
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Arah Angin</p>
-                  <h1><?= $data01['wd'] == null || $data01['wd'] == '' ? '&nbsp' : $data01['wd'] ?></h1>
+                  <h1><?= $data01['wd'] == null || $data01['wd'] == '' ? '&nbsp' : $data01['wd'] ?>&deg;</h1> <br>
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Kelembaban</p>
-                  <h1><?= $data01['humidity'] == null || $data01['humidity'] == '' ? '&nbsp' : $data01['humidity'] ?></h1>
+                  <h1><?= $data01['humidity'] == null || $data01['humidity'] == '' ? '&nbsp' : $data01['humidity'] ?> %</h1><br>
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Curah Hujan</p>
-                  <h1><?= $data01['rain_intensity'] == null || $data01['rain_intensity'] == '' ? '&nbsp' : $data01['rain_intensity'] ?></h1>
+                  <h1><?= $data01['rain_intensity'] == null || $data01['rain_intensity'] == '' ? '&nbsp' : $data01['rain_intensity'] ?></h1> mm/jam
                 </div>
               </div>
             </div>
@@ -114,37 +114,37 @@
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Tekanan</p>
-                  <h1><?= $data02['pressure'] == null || $data02['pressure'] == '' ? '&nbsp' : $data02['pressure'] ?></h1>
+                  <h1><?= $data02['pressure'] == null || $data02['pressure'] == '' ? '&nbsp' : $data02['pressure'] ?></h1> MBar
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Temperatur</p>
-                  <h1><?= $data02['temperature'] == null || $data02['temperature'] == '' ? '&nbsp' : $data02['temperature'] ?>&deg;</h1>
+                  <h1><?= $data02['temperature'] == null || $data02['temperature'] == '' ? '&nbsp' : $data02['temperature'] ?>&deg;</h1>(celcius)
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Kec. Angin</p>
-                  <h1><?= $data02['ws'] == null || $data02['ws'] == '' ? '&nbsp' : $data02['ws'] ?></h1>
+                  <h1><?= $data02['ws'] == null || $data02['ws'] == '' ? '&nbsp' : $data02['ws'] ?></h1> Km/jam
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Arah Angin</p>
-                  <h1><?= $data02['wd'] == null || $data02['wd'] == '' ? '&nbsp' : $data02['wd'] ?></h1>
+                  <h1><?= $data02['wd'] == null || $data02['wd'] == '' ? '&nbsp' : $data02['wd'] ?></h1><br>
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Kelembaban</p>
-                  <h1><?= $data02['humidity'] == null || $data02['humidity'] == '' ? '&nbsp' : $data02['humidity'] ?></h1>
+                  <h1><?= $data02['humidity'] == null || $data02['humidity'] == '' ? '&nbsp' : $data02['humidity'] ?> %</h1><br>
                 </div>
               </div>
               <div class="col-sm">
                 <div class="card bg-info">
                   <p>Curah Hujan</p>
-                  <h1><?= $data02['rain_intensity'] == null || $data02['rain_intensity'] == '' ? '&nbsp' : $data02['rain_intensity'] ?></h1>
+                  <h1><?= $data02['rain_intensity'] == null || $data02['rain_intensity'] == '' ? '&nbsp' : $data02['rain_intensity'] ?></h1> mm/jam
                 </div>
               </div>
             </div>
