@@ -252,7 +252,7 @@
           <?= $data01['no2'] >= '350' ? '350' : $data01['no2'] ?>,
         <?php endforeach ?>
       ];
-      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : '#28a745');
+      const colours = data.map((value) => value > 0 && value <= 50 ? 'grey' : value > 50 && value <= 100 ? 'grey' : value > 100 && value <= 200 ? 'grey' : value > 200 && value <= 300 ? 'grey' : value > 300 ? 'grey' : 'grey');
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
@@ -309,8 +309,8 @@
                   ticks: {
                     beginAtZero: true,
                     suggestedMin: 0,
-                    stepSize: 50,
-                    suggestedMax: 350,
+                    stepSize: 1000,
+                    suggestedMax: 5000,
                   }
                 }],
                 xAxes: [{
@@ -418,7 +418,7 @@
           <?= $data02['no2'] >= '350' ? '350' : $data02['no2'] ?>,
         <?php endforeach ?>
       ];
-      const colours = data.map((value) => value > 0 && value <= 50 ? '#28a745' : value > 50 && value <= 100 ? '#007bff' : value > 100 && value <= 200 ? '#ffc107' : value > 200 && value <= 300 ? '#dc3545' : value > 300 ? '#343a40' : '#28a745');
+      const colours = data.map((value) => value > 0 && value <= 50 ? 'grey' : value > 50 && value <= 100 ? 'grey' : value > 100 && value <= 200 ? 'grey' : value > 200 && value <= 300 ? 'grey' : value > 300 ? 'grey' : 'grey');
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
@@ -475,8 +475,8 @@
                   ticks: {
                     beginAtZero: true,
                     suggestedMin: 0,
-                    stepSize: 50,
-                    suggestedMax: 350,
+                    stepSize: 1000,
+                    suggestedMax: 5000,
                   }
                 }],
                 xAxes: [{
