@@ -243,13 +243,13 @@
     $(function() {
        const data = [
         <?php foreach($pelindodata01 as $data01) : ?>
-          <?= $data01['pm10'] >= '350' ? '350' : $data01['pm10'] ?>,
-          <?= $data01['pm25'] >= '350' ? '350' : $data01['pm25'] ?>,
-          <?= $data01['tsp'] >= '350' ? '350' : $data01['tsp'] ?>,
-          <?= $data01['so2'] >= '350' ? '350' : $data01['so2'] ?>,
-          <?= $data01['co'] >= '350' ? '350' : $data01['co'] ?>,
-          <?= $data01['o3'] >= '350' ? '350' : $data01['o3'] ?>,
-          <?= $data01['no2'] >= '350' ? '350' : $data01['no2'] ?>,
+          <?= $data01['pm10'] ?>,
+          <?= $data01['pm25'] ?>,
+          <?= $data01['tsp'] ?>,
+          <?= $data01['so2'] ?>,
+          <?= $data01['co'] ?>,
+          <?= $data01['o3'] ?>,
+          <?= $data01['no2'] ?>,
         <?php endforeach ?>
       ];
       const colours = data.map((value) => value > 0 && value <= 50 ? 'grey' : value > 50 && value <= 100 ? 'grey' : value > 100 && value <= 200 ? 'grey' : value > 200 && value <= 300 ? 'grey' : value > 300 ? 'grey' : 'grey');
@@ -409,13 +409,13 @@
     $(function() {
       const data = [
         <?php foreach($pelindodata02 as $data02) : ?>
-          <?= $data02['pm10'] >= '350' ? '350' : $data02['pm10'] ?>,
-          <?= $data02['pm25'] >= '350' ? '350' : $data02['pm25'] ?>,
-          <?= $data02['tsp'] >= '350' ? '350' : $data02['tsp'] ?>,
-          <?= $data02['so2'] >= '350' ? '350' : $data02['so2'] ?>,
-          <?= $data02['co'] >= '350' ? '350' : $data02['co'] ?>,
-          <?= $data02['o3'] >= '350' ? '350' : $data02['o3'] ?>,
-          <?= $data02['no2'] >= '350' ? '350' : $data02['no2'] ?>,
+          <?= $data02['pm10'] ?>,
+          <?= $data02['pm25'] ?>,
+          <?= $data02['tsp'] ?>,
+          <?= $data02['so2'] ?>,
+          <?= $data02['co'] ?>,
+          <?= $data02['o3'] ?>,
+          <?= $data02['no2'] ?>,
         <?php endforeach ?>
       ];
       const colours = data.map((value) => value > 0 && value <= 50 ? 'grey' : value > 50 && value <= 100 ? 'grey' : value > 100 && value <= 200 ? 'grey' : value > 200 && value <= 300 ? 'grey' : value > 300 ? 'grey' : 'grey');
