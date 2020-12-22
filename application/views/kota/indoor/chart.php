@@ -108,7 +108,7 @@
               <canvas id="pelindodata02" width="100" height="100"></canvas>
             </div>
           </div>          
-          
+          <?php $pelindodata02 = $pelindodata01; ?>
           <?php foreach($pelindodata02 as $data02) : ?>
             <div class="row">
               <div class="col-sm">
@@ -160,7 +160,8 @@
       const data = [
         <?php foreach($pelindoispu01 as $ispu01) : ?>
           <?= $ispu01['pm10'] >= '350' ? '350' : $ispu01['pm10'] ?>,
-          <?= $ispu01['so2'] >= '350' ? '350' : $ispu01['so2'] ?>,
+          <?= $ispu01['pm25'] >= '350' ? '350' : $ispu01['pm25'] ?>,
+          <?= $ispu01['so2']/10 >= '350' ? '350' : round($ispu01['so2']/10) ?>,
           <?= $ispu01['co'] >= '350' ? '350' : $ispu01['co'] ?>,
           <?= $ispu01['o3'] >= '350' ? '350' : $ispu01['o3'] ?>,
           <?= $ispu01['no2'] >= '350' ? '350' : $ispu01['no2'] ?>,
@@ -170,7 +171,7 @@
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
-          labels: ["PM10", "SO2", "CO", "O3", "NO2"],
+          labels: ["PM10", "PM2.5", "SO2", "CO", "O3", "NO2"],
           datasets: [{
               label: '# ISPU',
               // backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
@@ -246,7 +247,7 @@
           <?= $data01['pm10'] ?>,
           <?= $data01['pm25'] ?>,
           <?= $data01['tsp'] ?>,
-          <?= $data01['so2'] ?>,
+          <?= round($data01['so2']/10) ?>,
           <?= $data01['co'] ?>,
           <?= $data01['o3'] ?>,
           <?= $data01['no2'] ?>,
@@ -328,7 +329,8 @@
       const data = [
         <?php foreach($pelindoispu02 as $ispu02) : ?>
           <?= $ispu02['pm10'] >= '350' ? '350' : $ispu02['pm10'] ?>,
-          <?= $ispu02['so2'] >= '350' ? '350' : $ispu02['so2'] ?>,
+          <?= $ispu02['pm25'] >= '350' ? '350' : $ispu02['pm25'] ?>,
+          <?= $ispu02['so2']/10 >= '350' ? '350' : round($ispu02['so2']/10) ?>,
           <?= $ispu02['co'] >= '350' ? '350' : $ispu02['co'] ?>,
           <?= $ispu02['o3'] >= '350' ? '350' : $ispu02['o3'] ?>,
           <?= $ispu02['no2'] >= '350' ? '350' : $ispu02['no2'] ?>,
@@ -338,7 +340,7 @@
 
       var color = Chart.helpers.color;
       var UserVsMyAppsData = {
-        labels: ["PM10", "SO2", "CO", "O3", "NO2"],
+        labels: ["PM10", "PM2.5", "SO2", "CO", "O3", "NO2"],
           datasets: [{
               label: '# ISPU',
               backgroundColor: colours,
@@ -412,7 +414,7 @@
           <?= $data02['pm10'] ?>,
           <?= $data02['pm25'] ?>,
           <?= $data02['tsp'] ?>,
-          <?= $data02['so2'] ?>,
+          <?= round($data02['so2']/10) ?>,
           <?= $data02['co'] ?>,
           <?= $data02['o3'] ?>,
           <?= $data02['no2'] ?>,
