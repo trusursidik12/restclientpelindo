@@ -65,7 +65,7 @@ class Getdata_m extends CI_model
 			$response = $this->_client->request('GET', 'api/show/indoor/ispu', [
 				'query' => [
 					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA==',
-					'id_stasiun' => 'PELINDO2_01'
+					'id_stasiun' => 'PELINDO1_CIREBON'
 				],
 			]);
 
@@ -87,7 +87,7 @@ class Getdata_m extends CI_model
 			$response = $this->_client->request('GET', 'api/show/indoor/ispu', [
 				'query' => [
 					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA==',
-					'id_stasiun' => 'PELINDO2_02'
+					'id_stasiun' => 'PELINDO2_CIREBON'
 				],
 			]);
 
