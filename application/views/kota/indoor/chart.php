@@ -108,8 +108,8 @@
               <canvas id="pelindodata02" width="100" height="100"></canvas>
             </div>
           </div>          
-          <?php $pelindodata02 = $pelindodata01; ?>
-          <?php foreach($pelindodata02 as $data02) : ?>
+		  <!--SEMENTARA-->
+          <?php foreach($pelindodata01 as $data02) : ?>
             <div class="row">
               <div class="col-sm">
                 <div class="card bg-info">
@@ -324,6 +324,7 @@
       });
     });
   </script>
+  <!--SEMENTARA ditambah 25-->
   <script>
     $(function() {
       const data = [
@@ -331,7 +332,7 @@
           <?= $ispu02['pm10'] >= '350' ? '350' : $ispu02['pm10'] ?>,
           <?= $ispu02['pm25'] >= '350' ? '350' : $ispu02['pm25'] ?>,
           <?= $ispu02['so2']/10 >= '350' ? '350' : round($ispu02['so2']/10) ?>,
-          <?= $ispu02['co'] >= '350' ? '350' : $ispu02['co'] ?>,
+          <?= $ispu02['co'] >= '350' ? '350' : round($ispu02['co'] + 25,2) ?>,
           <?= $ispu02['o3'] >= '350' ? '350' : $ispu02['o3'] ?>,
           <?= $ispu02['no2'] >= '350' ? '350' : $ispu02['no2'] ?>,
         <?php endforeach ?>
@@ -407,6 +408,7 @@
       });
     });
   </script>
+  <!--SEMENTARA dikali 100-->
   <script>
     $(function() {
       const data = [
@@ -415,7 +417,7 @@
           <?= $data02['pm25'] ?>,
           <?= $data02['tsp'] ?>,
           <?= round($data02['so2']/10) ?>,
-          <?= $data02['co'] ?>,
+          <?= round($data02['co']*100) ?>,
           <?= $data02['o3'] ?>,
           <?= $data02['no2'] ?>,
         <?php endforeach ?>
