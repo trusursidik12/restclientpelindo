@@ -109,7 +109,7 @@
             </div>
           </div>          
 		  <!--SEMENTARA ==> cek outdoor juga-->
-          <?php foreach($pelindodata01 as $data02) : ?>
+          <?php foreach($pelindodata02 as $data02) : ?>
             <div class="row">
               <div class="col-sm">
                 <div class="card bg-info">
