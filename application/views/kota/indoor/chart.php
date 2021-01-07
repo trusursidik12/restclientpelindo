@@ -106,6 +106,17 @@
             <div class="col-sm-6">
               <p style="font-size: 20px;"><b>DATA <?php foreach($pelindodata02 as $data02) : ?><?= '('.$data02['waktu'].')' ?><?php endforeach ?></b></p>
               <canvas id="pelindodata02" width="100" height="100"></canvas>
+                <table border="0" width="100%" style="margin-left: 22px; margin-top: -30px; font-size: 24px;" >
+                  <tr>
+                    <td width="30"><?= $pelindodata02[0]['pm10'] ?></td>
+                    <td width="30"><?= $pelindodata02[0]['pm25'] ?></td>
+                    <td width="30"><?= $pelindodata02[0]['tsp'] ?></td>
+                    <td width="30"><?= $pelindodata02[0]['so2'] ?></td>
+                    <td width="30"><?= $pelindodata02[0]['co'] ?></td>
+                    <td width="30"><?= $pelindodata02[0]['o3'] ?></td>
+                    <td width="45"><?= $pelindodata02[0]['no2'] ?></td>
+                  </tr>
+                </table><br>
             </div>
           </div>          
 		  <!--SEMENTARA ==> cek outdoor juga-->
@@ -247,10 +258,10 @@
           <?= $data01['pm10'] ?>,
           <?= $data01['pm25'] ?>,
           <?= $data01['tsp'] ?>,
-          <?= round($data01['so2']/10) ?>,
-          <?= $data01['co'] ?>,
-          <?= $data01['o3'] ?>,
-          <?= $data01['no2'] ?>,
+          <?= round((($data01['so2']/10) / 1200) * 500) ?>,
+          <?= round(($data01['co'] / 45000) * 500) ?>,
+          <?= round(($data01['o3'] / 1000) * 500) ?>,
+          <?= round(($data01['no2'] / 3000) * 500) ?>
         <?php endforeach ?>
       ];
       const colours = data.map((value) => value > 0 && value <= 50 ? 'grey' : value > 50 && value <= 100 ? 'grey' : value > 100 && value <= 200 ? 'grey' : value > 200 && value <= 300 ? 'grey' : value > 300 ? 'grey' : 'grey');
@@ -310,8 +321,9 @@
                   ticks: {
                     beginAtZero: true,
                     suggestedMin: 0,
-                    stepSize: 1000,
-                    suggestedMax: 5000,
+                    // stepSize: 1000,
+                    suggestedMax: 500,
+                    display: false
                   }
                 }],
                 xAxes: [{
@@ -416,10 +428,10 @@
           <?= $data02['pm10'] ?>,
           <?= $data02['pm25'] ?>,
           <?= $data02['tsp'] ?>,
-          <?= round($data02['so2']/10) ?>,
-          <?= round($data02['co']*100) ?>,
-          <?= $data02['o3'] ?>,
-          <?= $data02['no2'] ?>,
+          <?= round((($data02['so2']/10) / 1200) * 500) ?>,
+          <?= round(($data02['co'] / 45000) * 500) ?>,
+          <?= round(($data02['o3'] / 1000) * 500) ?>,
+          <?= round(($data02['no2'] / 3000) * 500) ?>,
         <?php endforeach ?>
       ];
       const colours = data.map((value) => value > 0 && value <= 50 ? 'grey' : value > 50 && value <= 100 ? 'grey' : value > 100 && value <= 200 ? 'grey' : value > 200 && value <= 300 ? 'grey' : value > 300 ? 'grey' : 'grey');
@@ -479,8 +491,9 @@
                   ticks: {
                     beginAtZero: true,
                     suggestedMin: 0,
-                    stepSize: 1000,
-                    suggestedMax: 5000,
+                    // stepSize: 1000,
+                    suggestedMax: 500,
+                    display: false,
                   }
                 }],
                 xAxes: [{
