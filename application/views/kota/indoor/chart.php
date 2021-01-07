@@ -314,6 +314,9 @@
         legend: {
           display: false
         },
+        tooltips: {
+          enabled: false
+        },
         "hover": {
           "animationDuration": 0
         },
@@ -322,6 +325,7 @@
           "onComplete": function() {
             var chartInstance = this.chart,
               ctx = chartInstance.ctx;
+            ctx.fillStyle = 'white';
 
             ctx.textAlign = 'center';
             ctx.textBaseline = 'bottom';
@@ -482,6 +486,9 @@
           display: false,
 
         },
+        tooltips: {
+          enabled: false
+        },
         "hover": {
           "animationDuration": 0
         },
@@ -491,6 +498,7 @@
             var chartInstance = this.chart,
               ctx = chartInstance.ctx;
 
+            ctx.fillStyle = 'white';
             ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
             ctx.textAlign = 'center';
             ctx.textBaseline = 'bottom';
